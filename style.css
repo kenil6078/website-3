@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: Helvetica Now Display;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+main nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main nav .top {
+  width: 100%;
+}
+main nav .bottom {
+  display: flex;
+  gap: 1rem;
+}
+main nav .bottom h5 {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+main nav .bottom h4 {
+  font-size: 1rem;
+}
+main .view-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main .view-1 .top {
+  width: 100%;
+}
+main .view-1 .top img {
+  width: 100%;
+}
+main .view-1 .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+main .view-1 .bottom h4 {
+  font-family: monospace;
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+main .view-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .view-2 .top {
+  width: 100%;
+}
+main .view-2 .top img {
+  width: 100%;
+}
+main .view-2 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-2 .bottom h2 {
+  margin-top: 0.6rem;
+  font-size: 2.8em;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+}
+main .view-2 .bottom p {
+  font-family: monospace;
+  font-size: 1.6em;
+  opacity: 0.6;
+}
+main .view-2 .bottom .text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+}
+main .view-2 .bottom .text p {
+  font-size: 2rem;
+  opacity: 1;
+}
+main .view-2 .bottom .text h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main .view-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .view-3 .top {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main .view-3 .top img {
+  width: 100%;
+}
+main .view-3 .bottom {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+main .view-3 .bottom h4 {
+  margin-top: 1rem;
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+main .view-3 .bottom .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+main .view-3 .bottom .text h3 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+main .view-3 .bottom .text p {
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+main .view-4 {
+  width: 100%;
+}
+main .view-4 .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-4 .top .text {
+  width: 100%;
+}
+main .view-4 .top .text h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+main .view-4 .top .parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-4 .top .parent .child {
+  width: 100%;
+}
+main .view-4 .top .parent .child h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .view-4 .top .parent .child p {
+  font-size: 1rem;
+  font-family: monospace;
+  margin-top: 1rem;
+}
+main .view-4 .top .parent .child .btn {
+  width: 100%;
+  display: flex;
+  gap: 1.2rem;
+  margin: auto;
+}
+main .view-4 .top .parent .child .btn .border {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 2rem;
+  color: #fff;
+  text-align: center;
+}
+main .view-4 .top .parent .child .btn h6 {
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+main .view-4 .bottom {
+  width: 100%;
+  margin-top: 2.4rem;
+}
+main .view-4 .bottom img {
+  width: 100%;
+}
+main .view-5 {
+  margin-top: 4rem;
+  width: 100%;
+}
+main .view-5 .image {
+  margin-top: 3rem;
+  width: 100%;
+}
+main .view-5 .image img {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  main {
+    width: 100%;
+    padding: 2rem;
+  }
+  .view-2 {
+    width: 100%;
+  }
+  .view-2 .child {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+  }
+  .view-2 .child .top {
+    width: 50%;
+  }
+  .view-2 .child .top img {
+    width: 100%;
+  }
+  .view-2 .child .bottom {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .view-2 .child .bottom h2 {
+    width: 80%;
+    font-size: 4rem;
+  }
+  .view-2 .child .bottom p {
+    font-size: 1.6rem;
+  }
+  .view-2 .child .bottom .parent {
+    width: 100%;
+    margin: auto;
+  }
+  .view-2 .child .bottom .parent .text {
+    width: 100%;
+    padding: 1rem;
+  }
+  .view-3 {
+    width: 100%;
+  }
+  .view-3 .parent {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+  }
+  .view-3 .parent .top {
+    width: 50%;
+  }
+  .view-3 .parent .bottom {
+    width: 50%;
+    flex-direction: row-reverse;
+  }
+  .view-3 .parent .bottom h4 {
+    opacity: 0.6;
+  }
+  .view-3 .parent .bottom .text {
+    width: 100%;
+  }
+  .view-3 .parent .bottom .text h3 {
+    font-size: 5rem;
+  }
+  .view-3 .parent .bottom .text p {
+    margin: auto;
+    font-size: 1.4rem;
+    opacity: 0.7;
+  }
+  .view-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .view-4 .top {
+    width: 50%;
+    margin: auto;
+  }
+  .view-4 .top .text {
+    width: 100%;
+  }
+  .view-4 .top .text h2 {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
